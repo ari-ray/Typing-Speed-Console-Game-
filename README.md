@@ -1,4 +1,4 @@
-# Typing-Speed-Console-Game
+# Typing Speed Console Game
 A typing speed console game in C made using ncurses. It is an interactive game which gives real time feedback regarding the correct and incorrect keystrokes. Test your typing speed, accuracy and reflexes across multiple difficulty levels. 
 
 ## Features 
@@ -27,10 +27,10 @@ A typing speed console game in C made using ncurses. It is an interactive game w
 - Open a terminal in the folder where typing_game.c is located
 - Compile it with gcc and link ncurses:
   ``` bash
-  # gcc typing_game.c -o typinggame -lncurses
+  gcc typing_game.c -o typinggame -lncurses
 - Run it using a word list (for example wordpool.txt in the same folder):
   ``` bash
-  # ./typinggame < wordpool.txt
+  ./typinggame < wordpool.txt
 
 ## Gameplay
 - Select a difficulty mode (Easy/ Medium/ Hard)
@@ -41,3 +41,14 @@ A typing speed console game in C made using ncurses. It is an interactive game w
 - After 60 seconds or when all the words are typed, stats are displayed
 
 ## Technical Highlights
+- Bult in C using the ncursees library for real-time console input
+- Implements cursor moment, text color and input handling
+- Tracks typing stats and calculates WPM, CPS and accuracy
+- Modular code design with functions for gameplay logic, end-game stats and word handling
+- Random word selection ensures each game session is unique
+
+## What I Learned
+- Handling real-time input and output in C
+- Using ncurses for interactive console applications
+- Tracking and calculating metrics for user performance
+- Designing modular, maintainable C code
